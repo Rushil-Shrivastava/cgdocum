@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="device-width, inital-scale=1">
+        <title>Technical Document</title>
+        <link rel="stylesheet" href="Index.css">
+    </head>
+    <body>
+        <nav id="navbar">
+            <header class="navbar-header">
+                <h1>Computer Graphics Assignment 1</h1>
+            </header>
+        </nav>
+        <div  class="iframe1">  
+            <header class="e">To be shown in this presentation</header><br>
+                <a href="#q1" class="a">1. Introduction</a><br>
+                <a href="#q2" class="a">2. Storyboard</a><br>
+                <a href="#q3" class="a">3. OpenGL Implementation</a><br>
+                <a href="#q4" class="a">4. Final Render</a>
+        </div>
+        <div class="iframe2">
+            <header class="h" id="q1">Introduction</header><hr>
+                <p>
+                    Greetings! We have prepared a storyboard which is about two students
+                    who were late for their school and so they decided to parkour
+                    through the city so that they will be able to reach in time. In this
+                    story we have used various concepts of computer graphics for example
+                    perspective projections of one dimentional and two dimentional
+                    bodies. We have also prepared the openGL code of the same for which
+                    we have written code for the details of the storyboard and thus
+                    completeing the task to our best of the ability. To complete this
+                    project, we have used various softwares such as Blender, Autodesk
+                    Sketchbook, and Da Vinci Resolve, and for openGL code and HTML
+                    documentation, we used VS Code. 
+                </p> 
+                <p>
+                    MEMBERS:-<br>
+                    ROHIT ARYAN<br>
+                    RUSHIL SHRIVASTAVA<br>
+                    GAUTHAM GUTTA<br>
+                    SAMARPITH S ROUT<br>
+                </p>
+                <hr>
+            <header class="h" id="q2">Storyboard</header><hr>
+                <p>
+                    The story is about two students who are late to school and are fans of 
+                    the stunt known as parkour. These students get across the city doing  
+                    these stunts only to be later found out by their teacher and be punished. 
+                    But, it surely was fun.
+                </p>
+                <div class="row">
+                    <img  class="image" src="framespng/00.png">
+                    <img  class="image" src="framespng/01.png">
+                </div>
+                <div class="row">
+                    <img  class="image" src="framespng/02.png">
+                    <img  class="image" src="framespng/03.png">
+                </div>
+                <div class="row">
+                    <img  class="image" src="framespng/04.png">
+                    <img  class="image" src="framespng/05.png">
+                </div>
+                <div class="row">
+                    <img  class="image" src="framespng/06.png">
+                    <img  class="image" src="framespng/07.png">
+                </div>
+                <div class="row">
+                    <img  class="image" src="framespng/08.png">
+                    <img  class="image" src="framespng/09.png">
+                </div>
+                <div class="row">
+                    <img  class="image" src="framespng/010.png">
+                    <img  class="image" src="framespng/011.png">
+                </div>
+                <div class="row">
+                    <img  class="image" src="framespng/012.png">
+                    <img  class="image" src="framespng/013.png">
+                </div>
+                <div class="row">
+                    <img  class="image" src="framespng/014.png">
+                    <img  class="image" src="framespng/015.png">
+                </div>    
+                <div class="row">
+                    <img  class="image" src="framespng/016.png">
+                    <img  class="image" src="framespng/017.png">
+                </div>
+                <div class="row">
+                    <img  class="image" src="framespng/018.png">
+                    <img  class="image" src="framespng/019.png">
+                </div>
+                <div class="row">
+                    <img  class="image" src="framespng/020.png">
+                    <img  class="image" src="framespng/021.png">
+                </div>
+                <div class="row">
+                    <img  class="image" src="framespng/022.png">
+                    <img  class="image" src="framespng/023.png">
+                </div>
+                <div class="row">
+                    <img  class="image" src="framespng/024.png">
+                    <img  class="image" src="framespng/025.png">
+                </div>
+                <div class="row" id="row">
+                    <img  class="image" src="framespng/026.png">
+                    <img  class="image" src="framespng/027.png">
+                </div>
+            <hr>
+            <header class="h" id="q3">OpenGl Implementation</header><hr>
+            <div>
+                <h1>An introduction to OpenGL:-</h1>
+                <p>Open Graphics Library (abbreviated OpenGL) is an Application Program Interface(API) used for rendering 2D and 3D graphics. The code for drawing a particular image is usually written in C or C++.</p>
+                <h1>Standard Header files used and their functions</h1>
+                <p>
+                    Iostream.h - provides basic input and output services. Contains the definition for functions like cout, cin.<br>
+                    Windows.h - Windows specific header file which contains the declarations of all functions in Windows API. Contains a variety of child header files like string.h, ctype.h, except.h, which are commonly used in C++ programs. Useful since OpenGL comes under the Win32 apps<br>
+                    GL/gl.h, GL/glu.h, GL/glaux.h - Contains the definition of the openGL inbuilt functions like glutinit, glcolor3f(), glvertex21(), etc.<br>
+                </p>
+
+                <h1>Description of the image we tried to animate on OpenGL</h1>
+                <p>The image which we tried to realise on OpenGL is that of a compound wall built along the street, which the main characters run across. We have used the line drawing algorithm to draw the edges of this wall, and the portion of the road around it. Color filling has been done accordingly
+                </p>
+            </div>
+            <div class="row" id="row">
+                <img  class="image" src="openGL results/Image1.jpeg">
+                <img  class="image" src="openGL results/Image2.jpeg">
+            </div>
+            <div>
+                <h1>
+                    A brief description of some of the important OpenGL in-built functions used in our code
+                </h1>
+                <p>
+                    glOrtho() - sets the display area dimensions, where our image will be rasterized <br><br>
+
+                    glPointSize() - specifies the diameter of the rasterized point. A bigger diameter would mean a thicker point, and hence a thicker line/circle/polygon<br><br>
+
+                    glColor3f(red,blue,green) :- used for filling colour in any given diagram. As we vary the values of red, blue and green, we go across various colour combinations<br><br>
+
+                    glBegin() - Declared before we start drawing a polygon<br><br>
+                    glEnd() - Declared after the polygon has been drawn, in order to terminate the process and start a new one<br><br>
+
+                    glFlush() - Returns the drawn figure to the output buffer, so that it can be projected onto the screen
+
+                </p>
+            </div>
+            <hr>
+            <header class="h" id="q4">Final Render</header><hr>
+            <video width="480" height="360" class="video" controls class="ri"> 
+                <source src="framespng/Project.mp4" type="video/mp4">
+            </video>
+        </div>
+    </body>
+</html>
